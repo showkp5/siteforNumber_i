@@ -8,9 +8,7 @@ import sqlite3
 app = Flask(__name__)
 app.secret_key = "KAI"  #loging
 
-#@app.route('/GOAT')
-#def GOAT():
-#    return render_template('MV_times_GOAT.html')
+
 
 @app.route('/')
 def top():
@@ -20,6 +18,10 @@ def top():
 #@app.route('/')
 #def top():
 #    return render_template('index.html')
+
+@app.route('/GOAT_Dance')
+def GOAT():
+    return render_template('MV_times_GOAT_Dance.html')
 
 if __name__ == "__main__":
     app.run()

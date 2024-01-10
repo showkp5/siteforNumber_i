@@ -36,7 +36,7 @@ body {
 }
 
 header {
-  height:100px;
+  height:40px;
 	width: 100%;
 	background-color: #eeeaec;
 	text-align: center;
@@ -163,10 +163,10 @@ section gdata{
 }
 
 #sec1 {
-	background-image : url(../img/IMG_6609.JPG);
+	background-image : url(../img/Site_image2.png);
 	background-repeat: repeat;
 	background-position: top center;
-	height:30px;	
+	height:10px;	
 	background-size:auto;
 }
 
