@@ -23,5 +23,13 @@ def top():
 def GOAT():
     return render_template('MV_times_GOAT_Dance.html')
 
+@app.route('/BYC')
+def BYC():
+    return render_template('MV_times_BYC.html')
+
+@app.route('/Ways')
+def Ways():
+    return render_template('MV_times_100Ways.html')
+
 if __name__ == "__main__":
     app.run()
