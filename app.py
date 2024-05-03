@@ -27,6 +27,10 @@ def GOAT():
 def BYC():
     return render_template('MV_times_BYC.html')
 
+@app.route('/BYC_Dance')
+def BYC_Dance():
+    return render_template('MV_times_BYC_Dance.html')
+
 @app.route('/Ways')
 def Ways():
     return render_template('MV_times_100Ways.html')
