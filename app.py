@@ -35,9 +35,17 @@ def BYC_Dance():
 def BON():
     return render_template('MV_times_BON.html')
 
-@app.route('/Ways')
-def Ways():
-    return render_template('MV_times_100Ways.html')
+@app.route('/BON_Dnce')
+def BON_Dance():
+    return render_template('MV_times_BON_Dance.html')
+
+@app.route('/INZM')
+def INZM():
+    return render_template('MV_times_INZM.html')
+
+#@app.route('/Ways')
+#def Ways():
+#    return render_template('MV_times_100Ways.html')
 
 if __name__ == "__main__":
     app.run()
