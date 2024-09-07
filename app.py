@@ -43,6 +43,10 @@ def BON_Dance():
 def INZM():
     return render_template('MV_times_INZM.html')
 
+@app.route('/INZM_HBL')
+def INZM_HBL():
+    return render_template('MV_times_INZM_HBL.html')
+
 #@app.route('/Ways')
 #def Ways():
 #    return render_template('MV_times_100Ways.html')
