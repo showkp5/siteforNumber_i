@@ -51,6 +51,10 @@ def INZM_HBL():
 def ALL():
     return render_template('MV_times_ALL.html')
 
+@app.route('/HRKGM')
+def HRKGM():
+    return render_template('MV_times_HRKGM_OV.html')
+
 #@app.route('/Ways')
 #def Ways():
 #    return render_template('MV_times_100Ways.html')
