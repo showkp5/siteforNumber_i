@@ -36,11 +36,15 @@ body {
 }
 
 header {
-  height:55px;
+	height: 79px;
 	width: 100%;
-	background-color: #eeeaec;
+	/* background-color: #eeeaec;*/
 	text-align: center;
 	position:fixed;
+    background-image : url(../img/Site_image2.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20px right 50%;
+    background-size:cover;
 }
 
 header ul {
