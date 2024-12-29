@@ -35,7 +35,7 @@ def BYC_Dance():
 def BON():
     return render_template('MV_times_BON.html')
 
-@app.route('/BON_Dnce')
+@app.route('/BON_Dance')
 def BON_Dance():
     return render_template('MV_times_BON_Dance.html')
 
@@ -54,6 +54,10 @@ def ALL():
 @app.route('/HRKGM')
 def HRKGM():
     return render_template('MV_times_HRKGM_OV.html')
+
+@app.route('/X')
+def X():
+    return render_template('MV_times_X.html')
 
 #@app.route('/Ways')
 #def Ways():

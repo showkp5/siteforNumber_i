@@ -9,12 +9,14 @@ body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
 }
 body {
 	background: #fff;
+    width:100%;
 	text-align: center;
 	font-size: 16px;
 	line-height: 1.4;
 	min-width: 100%;
 	-webkit-text-size-adjust: 100%;
 }
+
 li {
 	font-size: 20px;
 	list-style: none;
@@ -40,45 +42,50 @@ img {
 /* フォントの指定 */
 body {
 	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+
 }
 
 header {
-	margin-top: 0px;
-	height:60px;
+	height: 79px;
 	width: 100%;
-	background-color: #eeeaec;
+	/* background-color: #eeeaec;*/
 	text-align: center;
 	position:fixed;
+    background-image : url(../img/Site_image2.png);
+    background-repeat: no-repeat;
+    background-position: bottom 20px right 50%;
+    background-size:cover;
 }
 
 header ul {
-	/* width:1200px; */
-	width: 25%;
-	margin: 0 auto;
-    display: -webkit-flex;
-    display: flex;
+	width:1200px;
+    position: fixed;
+    right: 0;
+    width:250px;
+    padding-left:0%;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-ul li {
-	-webkit-flex-grow: 1;
-   flex-grow: 1;
-   width: 20%;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-}
-
 header li {
-	color: #555;
+	color: #313da7;
 	Text-align:left;
-	width: 20%;
+	width: 100%;
 	height:26px;
 	transition:0.2s; 
 	line-height:1;
+    padding-left: 10px;
+}
 
+.nav__menu_item {
+    display: grid;
+    font-size: 20px;
+    flex-grow: 2;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
 }
 
 header li:hover{ 
@@ -127,27 +134,22 @@ section {
 	text-align: center;
 	padding:5px 0;
 }
+
 section h1 {
 	font-size:30px;
 	height:fit-content;
 	font-weight:500;
-	padding-left: 50px;
+	padding-left: 0px;
 	color: rgb(27, 67, 187);
 }
 
 section gdata{
-	width:961px;
+	width:1800px;
 	height: 647px;
-	padding:20px 0;
+	padding:0 0;
 	display:block;
 	border:6px solid #d4c4bc;
 	margin:0 auto;
-}
-
-.box {
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 3%;
 }
 
 .jumpto{
@@ -172,12 +174,8 @@ section gdata{
 
 
 #sec1 {
-	background-image : url(../img/Site_image2.png);
-	background-repeat: no-repeat;
-	background-position: top;
-	height:15px;	
-	padding: 70px 10px 50px 20px;
-	background-size:cover;
+
+	height:44px;
 }
 
 #sec1 h1 {
@@ -224,27 +222,6 @@ h4 {
 	text-align: left;
 }
 
-table td {
-    border: 1px solid #333;
-	text-align: left;
-	padding-left: 5px;
-	padding-right: 2px;
-}
-
-table th {
-	text-align: left;
-	padding-left: 5px;
-	padding-right: 2px;
-	width:40%;
-}
-
-.media_no{
-	width:24%;
-}
-
-.media_name{
-	width:30%;
-}
 
 .other{
 	background-color:rgb(236, 235, 233);
@@ -258,103 +235,6 @@ thead tfoot {
 .current{
     background-color:white;
 }
-
-.questionsOneContent {
-    width: 90%;
-    padding: 0 0 10px;
-    margin: 10px auto 0;
-    border-bottom: 1px solid #D8D8D8;
-}
-.questionsOnebox {
-    width: 90%;
-    display: flex;
-    align-items: center;
-}
-.result_music_name {
-    font-size: 16px;
-    font-weight: bold;
-	width:250px;
-	text-align: left;
-    background-color: #FFA17A;
-    padding: 7px;
-    border-radius: 5px;
-    color: white;
-}
-.result_media_no {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 5px;
-	width:25px;
-	text-align: left;
-    background-color: #ffffff;
-    padding: 7px;
-    border-radius: 3px;
-    color: rgb(39, 38, 38);
-}
-
-.result_media_category {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 5px;
-	width:40px;
-	text-align: left;
-    background-color: #ffffff;
-    padding: 7px;
-    border-radius: 3px;
-    color: rgb(39, 38, 38);
-}
-.result_media_name {
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 3px;
-	width:280px;
-	text-align: left;
-    background-color: #ffffff;
-    padding: 8px;
-    border-radius: 3px;
-    color: rgb(39, 38, 38);
-}
-.result_lylics_by {
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 3px;
-	width:100px;
-	text-align: left;
-    background-color: #ffffff;
-    padding: 8px;
-    border-radius: 3px;
-    color: rgb(39, 38, 38);
-}
-.result_composition_by {
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 3px;
-	width:100px;
-	text-align: left;
-    background-color: #ffffff;
-    padding: 8px;
-    border-radius: 3px;
-    color: rgb(39, 38, 38);
-}
-.result_lylics_display {
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 3px;
-	width:280px;
-	text-align: left;
-    background-color: #ffffff;
-    padding: 8px;
-    border-radius: 3px;
-    color: rgb(39, 38, 38);
-}
-.searchFrame{
-	position: relative;
-	display: inline-block;
-}
-.inputBox{
-	padding-right: 20px;
-	width:120px;
-  }
   
 footer {
 	height: 80px;
@@ -366,5 +246,61 @@ footer .copyright {
 	font-size: 12px;
 	padding-top:30px;
 	letter-spacing: 1px;
+}
+
+
+nav ul {
+    list-style:none;
+}
+
+.fv__hamburger {
+    cursor: pointer;
+    position: fixed;/*スクロールしても固定*/
+    border: 0px;
+    top: 6px;
+    right: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);/*ボタンに影を付ける*/
+    background: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;/*ボタンを円形にしている（ここを変更することで四角形も可能）*/
+    z-index: 10;/*最前面にくるように数値を大きくしている*/
+}
+.fv__hamburger span {
+    display: inline-block;
+    transition: all 0.4s;
+    position: absolute;
+    left: 15px;
+    height: 2px;
+    border-radius: 2px;
+    background: #313da7;
+    width: 18px;
+}
+.fv__hamburger span:nth-child(1) {
+    top:16px;
+}
+.fv__hamburger span:nth-child(2) {
+    top:23px;
+}
+.fv__hamburger span:nth-child(3) {
+    top:30px;
+}
+
+.fv__hamburger.active span:nth-child(1) {
+    top: 30px;
+    left: 15px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 18px;
+}
+
+.fv__hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.fv__hamburger.active span:nth-child(3) {
+    top: 18px;
+    left: 15px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 18px;
 }
 

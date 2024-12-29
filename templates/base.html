@@ -9,37 +9,79 @@
     <meta property="og:image" content="https://sitefornumber-i.onrender.com/static/img/Site_image.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Site for Number_i fan"> 
-	<link rel="stylesheet" type="text/css" media="screen and ( min-width:769px )" href="../static/css/stylesheet.css">
-	<link rel="stylesheet" type="text/css" media="screen and ( max-width:768px )" href="../static/css/stylesheet_sp.css">
+    <!-- 
+    <link rel="stylesheet" type="text/css" media="screen and ( min-width:769px )" href="../static/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen and ( max-width:768px )" href="../static/css/stylesheet_sp.css">
+    -->
+    <link rel="stylesheet" type="text/css"  href="../static/css/stylesheet.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
  
 </head>
 
+<script src="script.js"></script>
+<script>
+    $(function(){
+  
+      //リンクを消す
+      $('#sp__bg').hide();
+  
+      //もし、.fv__hamburger（ハンバーガーボタンが）がクリックされたら...の内容を書く
+      $('.fv__hamburger').click(function(){
+  
+        //もし、ハンバーガーボタンに.activeクラスが付与(hasClass)されていた場合
+        if($('.fv__hamburger').hasClass('active')){
+  
+          //こちらはボタンが✕の状態の処理
+          $('#sp__bg').fadeOut(300);
+          $(this).removeClass('active');
+  
+          }else{
+  
+            //こちらはボタンが三本線の状態の処理
+            $('#sp__bg').fadeIn(300);
+            $(this).addClass('active');
+          }
+  
+      });
+    });
+</script>
+
 <body>
+    <header>  
+        <button class="fv__hamburger">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </button>
+        
+                <!-- リンク表示 #sp_bg-->
+        <div id="sp__bg">
+            <ul class="nav__menu">
+              <li class="nav__menu_item">  </li>
+              <li class="nav__menu_item"><a href="/">GOAT</a></li>
+              <li class="nav__menu_item"><a href="/GOAT_Dance">GOAT_Dance</a></li>
+              <li class="nav__menu_item"><a href="/BYC">BYC</a></li>
+              <li class="nav__menu_item"><a href="/BYC_Dance"> BYC_Dance</a></li>
+              <li class="nav__menu_item"><a href="/BON">BON</a></li>
+              <li class="nav__menu_item"><a href="/BON_Dance"> BON_Dance</a></li>
+              <li class="nav__menu_item"><a href="/INZM">INZM</a></li>
+              <li class="nav__menu_item"><a href="/INZM_HBL"> INZM_HyperBandLive</a></li>
+              <li class="nav__menu_item"><a href="/HRKGM">HIRAKEGOMA</a></li>
+              <li class="nav__menu_item">  🐐🐐🐐</li>
+              <li class="nav__menu_item"><a href="/ALL">ALL</a></li>
+            </ul>
 
-    <header>
-
-        <ul class= "open jp">
-                    <li><a href="/">GOAT/</a></li>
-                    <li><a href="/BYC">BYC/</a></li>
-                    <li><a href="/BON">BON</a></li>
-                    <li><a href="/INZM">INZM</a></li>
-                    <li><a href="/HRKGM">HRKGM</a></li>
-                    <li><a href="/GOAT_Dance">GOAT_D/</a></li>
-                    <li><a href="/BYC_Dance">BYC_D/</a></li>
-                    <li><a href="/BON_Dance">BON_D</a></li>
-                    <li><a href="/INZM_HBL">INZM_HBL</a></li>
-                    <li><a href="/ALL">ALL</a></li>
-
-
-        </ul>
-
+        </div> 
     </header>
 
 
     <section id="sec1">
-        <h4> </h4>
-
+        <h4>  </h4>
     </section>
     
     {% block content %}
