@@ -51,22 +51,22 @@ header {
 	/* background-color: #eeeaec;*/
 	text-align: center;
 	position:fixed;
-    background-image : url(../img/Site_image2.png);
-    background-repeat: no-repeat;
-    background-position: bottom 20px right 50%;
-    background-size:cover;
+	background-image : url(../img/Site_image2.png);
+	background-repeat: no-repeat;
+	background-position: bottom 20px right 50%;
+	background-size:cover;
 }
 
 header ul {
 	width:1200px;
-    position: fixed;
-    right: 0;
-    width:250px;
-    padding-left:0%;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+	position: fixed;
+	right: 0;
+	width:250px;
+	padding-left:0%;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 header li {
@@ -76,16 +76,16 @@ header li {
 	height:26px;
 	transition:0.2s; 
 	line-height:1;
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
 .nav__menu_item {
-    display: grid;
-    font-size: 20px;
-    flex-grow: 2;
-    align-items: center;
-    cursor: pointer;
-    background-color: white;
+	display: grid;
+	font-size: 20px;
+	flex-grow: 2;
+	align-items: center;
+	cursor: pointer;
+	background-color: white;
 }
 
 header li:hover{ 
@@ -118,7 +118,7 @@ header li:hover{
 h3{
 	text-align: left;
 	padding-left: 20px;
-	color:slategrey
+	color:slategrey;
 }
 
 h2{
@@ -157,7 +157,7 @@ section gdata{
 	padding: 2%;
 	margin: 0 auto;
 	text-align: left;
-	color:slategrey
+	color:slategrey;
 }
 
 .lenge{
@@ -266,6 +266,7 @@ nav ul {
     border-radius: 50%;/*ボタンを円形にしている（ここを変更することで四角形も可能）*/
     z-index: 10;/*最前面にくるように数値を大きくしている*/
 }
+
 .fv__hamburger span {
     display: inline-block;
     transition: all 0.4s;
