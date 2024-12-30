@@ -70,7 +70,7 @@ header ul {
 ul li {
 	-webkit-flex-grow: 1;
    flex-grow: 1;
-   width: 20%;
+   width: 100%;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
 }
@@ -78,6 +78,7 @@ ul li {
 header li {
 	color: #313da7;
 	Text-align:left;
+	width: 100%;
 	height:26px;
 	transition:0.2s; 
 	line-height:1;
