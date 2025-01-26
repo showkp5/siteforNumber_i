@@ -55,9 +55,9 @@ def ALL():
 def HRKGM():
     return render_template('MV_times_HRKGM_OV.html')
 
-@app.route('/X')
+@app.route('/GOD_i')
 def X():
-    return render_template('MV_times_X.html')
+    return render_template('MV_times_GOD_i.html')
 
 #@app.route('/Ways')
 #def Ways():
