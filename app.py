@@ -59,13 +59,17 @@ def HRKGM():
 def GOD_i():
     return render_template('MV_times_GOD_i.html')
 
+@app.route('/GOAT_Choreo')
+def GOAT_Choreo():
+    return render_template('MV_times_GOAT_Choreo.html')
+
 @app.route('/UMA')
 def UMA():
     return render_template('MV_times_UMA.html')
 
-@app.route('/GOAT_Choreo')
-def GOAT_Choreo():
-    return render_template('MV_times_GOAT_Choreo.html')
+@app.route('/UrZone')
+def UrZone():
+    return render_template('MV_times_UrZone.html')
 
 #@app.route('/Ways')
 #def Ways():
