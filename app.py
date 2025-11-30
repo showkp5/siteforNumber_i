@@ -75,6 +75,10 @@ def UMA():
 def UrZone():
     return render_template('MV_times_UrZone.html')
 
+@app.route('/LAVALAVA')
+def LAVALAVA():
+    return render_template('MV_times_LAVALAVA.html')
+  
 @app.route('/GBAD_Remix')
 def GBAD_Remix():
     return render_template('MV_times_GBAD_Remix.html')
