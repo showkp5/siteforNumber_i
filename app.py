@@ -51,6 +51,10 @@ def INZM_HBL():
 def ALL():
     return render_template('MV_times_ALL.html')
 
+@app.route('/ALLFromRelease')
+def ALLFromRelease():
+    return render_template('MV_times_ALLFromRelease.html')
+
 @app.route('/HRKGM')
 def HRKGM():
     return render_template('MV_times_HRKGM_OV.html')
@@ -74,6 +78,14 @@ def UrZone():
 @app.route('/LAVALAVA')
 def LAVALAVA():
     return render_template('MV_times_LAVALAVA.html')
+  
+@app.route('/GBAD_Remix')
+def GBAD_Remix():
+    return render_template('MV_times_GBAD_Remix.html')
+
+@app.route('/ATAMI')
+def ATAMI():
+    return render_template('MV_times_ATAMI.html')
 
 #@app.route('/Ways')
 #def Ways():
