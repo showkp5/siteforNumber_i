@@ -75,6 +75,10 @@ def UrZone():
 def LAVALAVA():
     return render_template('MV_times_LAVALAVA.html')
 
+@app.route('/3XL')
+def XL3():
+    return render_template('MV_times_3XL.html')
+
 #@app.route('/Ways')
 #def Ways():
 #    return render_template('MV_times_100Ways.html')
